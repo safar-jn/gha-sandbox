@@ -19,5 +19,5 @@ jobs:
         with:
           python-version: '3.8.6'
 
-      - name: Run a one-line script
+      - name: Print python version
         run: python --version
