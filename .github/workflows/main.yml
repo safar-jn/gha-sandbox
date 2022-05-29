@@ -1,8 +1,6 @@
 name: Main
 
 on:
-  push:
-    branches: [ master, develop ]
   pull_request:
     branches: [ master, develop ]
 
@@ -19,7 +17,5 @@ jobs:
         with:
           python-version: '3.8.6'
 
-      - name: Print info
-        run: |
-          python --version
-          uname -a
+      - name: Run a one-line script
+        run: python --version
